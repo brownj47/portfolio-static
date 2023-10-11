@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justus Brown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="flex justify-around p-4 bg-gray-100">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="bg-gray-200">
+        <div class="flex justify-center items-center">
+          <div class="flex p-5">
+            <div class="p-4">
+              <img src="https://via.placeholder.com/150" alt="Justus Brown" />
+            </div>
+            <div class="p-4">
+              <h1 class="text-6xl">Justus Brown</h1>
+              <h2 class="text-xl">Software Engineer</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="bg-gray-300">
+        <div class="flex flex-col md:flex-row p-5">
+          <div class="p-2">
+            <h2 class="text-3xl">About Me</h2>
+            <p class="pt-2">
+              Hi, I'm Justus Brown! I'm a Software Engineer based in the Greater
+              Seattle Area with a background in biology/healthcare and a love
+              for creative problem-solving.
+            </p>
+            <p class="pt-2">
+              Driven by the endless possibilities of technology, I transitioned
+              from a career as a healthcare professional to pursue Software
+              Development. I find joy in brainstorming and cherish the process
+              of turning ideas into impactful solutions.
+            </p>
+            <p class="pt-2">
+              I am interested in roles that allow me to combine my technical
+              prowess with my background in healthcare, biology, and research to
+              bring a unique perspective to every project.
+            </p>
+            <p class="pt-2">
+              I'm deeply passionate about continual learning and I do my best
+              work when I know I am making meaningful contributions to my team
+              and the product. I strive to write clean, maintainable and
+              efficient code to provide a seamless UX/DX.
+            </p>
+          </div>
+          <img
+            src="https://camo.githubusercontent.com/a87862da2686ec4de9b5fb45eb92220d41a247f7df71ab546ec2de4c9b770de1/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d62726f776e6a3437"
+            alt="GitHub Statistics"
+            class="p-2"
+          />
+        </div>
+      </section>
+      <section id="projects" class="bg-gray-400 p-5">
+        <h2 class="text-3xl text-center">Projects</h2>
+        <p class="text-xl text-center">Coming Soon</p>
+      </section>
+      <section id="work" class="bg-gray-500 text-center p-5">
+        <h2 class="text-3xl text-center">Work</h2>
+        <a
+          href="https://drive.google.com/file/d/11W2T2NQBrGglzYem_zSEyBot1unBV6oI/view?usp=drive_link"
+          >My Resume</a
+        >
+      </section>
+      <section id="contact" class="bg-gray-600 p-5">
+        <h2 class="text-3xl text-center">Contact Me</h2>
+
+        <form id="contact-form">
+          <div class="grid grid-cols-2 my-2">
+            <div class="span-cols-1 p-2">
+              <input
+                type="text"
+                id="name"
+                class="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="span-cols-1 p-2">
+              <input
+                type="email"
+                id="email"
+                class="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="p-2 pt-0">
+            <textarea
+              type="text"
+              id="message"
+              class="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 max-w-min mt-2 mb-4 mx-4"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./assets/js/contact-form.js"></script>
+  </body>
+</html>
