@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justus Brown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header>
+      <nav>
+        <ul class="flex justify-around p-4 bg-gray-300">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="">
+        <div class="flex justify-center items-center">
+          <div class="flex p-5">
+            <div class="p-4 max-w-xs">
+              <img
+                src="./assets/images/profile.jpg"
+                alt="An image of me, Justus Brown."
+                class="rounded-full md:rounded-xl"
+              />
+            </div>
+            <div class="p-4">
+              <h1 class="text-6xl">Justus Brown</h1>
+              <h2 class="text-xl">Software Engineer</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="flex justify-center max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row p-5">
+          <div class="p-2 max-w-prose">
+            <h2 class="text-3xl">About Me</h2>
+            <p class="pt-2">
+              Hi, I'm Justus Brown! I'm a Software Engineer based in the Greater
+              Seattle Area with a background in biology/healthcare and a love
+              for creative problem-solving.
+            </p>
+            <p class="pt-2">
+              Driven by the endless possibilities of technology, I transitioned
+              from a career as a healthcare professional to pursue Software
+              Development. I find joy in brainstorming and cherish the process
+              of turning ideas into impactful solutions.
+            </p>
+            <p class="pt-2">
+              I am interested in roles that allow me to combine my technical
+              prowess with my background in healthcare, biology, and research to
+              bring a unique perspective to every project.
+            </p>
+            <p class="pt-2">
+              I'm deeply passionate about continual learning and I do my best
+              work when I know I am making meaningful contributions to my team
+              and the product. I strive to write clean, maintainable and
+              efficient code to provide a seamless UX/DX.
+            </p>
+          </div>
+          <img
+            src="https://camo.githubusercontent.com/a87862da2686ec4de9b5fb45eb92220d41a247f7df71ab546ec2de4c9b770de1/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d62726f776e6a3437"
+            alt="My most used programming languages."
+            class="p-2"
+          />
+        </div>
+      </section>
+      <section id="projects">
+        <div class="max-w-5xl mx-auto px-7">
+          <div class="px-2">
+            <h2 class="text-3xl">Projects</h2>
+            <a
+              class="hover:text-gray-500 text-xl"
+              href="https://github.com/brownj47"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="p-2">
+              <div class="bg-gray-300 p-2 rounded-lg text-center">
+                <h3 class="text-xl">Project 1</h3>
+                <p class="text-sm">Description</p>
+                <p class="text-sm">Tech Stack</p>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="bg-gray-300 p-2 rounded-lg text-center">
+                <h3 class="text-xl">Project 2</h3>
+                <p class="text-sm">Description</p>
+                <p class="text-sm">Tech Stack</p>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="bg-gray-300 p-2 rounded-lg text-center">
+                <h3 class="text-xl">Project 3</h3>
+                <p class="text-sm">Description</p>
+                <p class="text-sm">Tech Stack</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="work" class="p-5 text-center">
+        <h2 class="text-3xl">Work</h2>
+        <a href="" target="_blank" class="hover:text-gray-500 text-xl"
+          >My Resume</a
+        >
+        <div class="flex flex-col items-center justify-center">
+          <div class="p-2">
+            <div class="bg-gray-300 p-2 rounded-lg max-w-md">
+              <h3 class="text-2xl">Fovus</h3>
+              <p>March 2023 - October 2023</p>
+              <p class="text-xl">Software Engineering Intern</p>
+              <p>
+                Optimized AWS resources, enhanced error notifications, and
+                improved testing, resulting in cost savings, system scalability,
+                reliability, and maintainability.
+              </p>
+            </div>
+          </div>
+          <div class="p-2">
+            <div class="bg-gray-300 p-2 rounded-lg max-w-md">
+              <h3 class="text-2xl">2U</h3>
+              <p>December 2022 - March 2023</p>
+              <p class="text-xl">Instructional Assistant</p>
+              <p>
+                Supported the delivery of a comprehensive Full Stack Software
+                Development Curriculum, mentoring and assisting students in
+                pursuing their technical interests.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="p-5">
+        <h2 class="text-3xl text-center">Contact Me</h2>
+
+        <form id="contact-form" class="max-w-lg mx-auto">
+          <div class="grid grid-cols-2 my-2">
+            <div class="span-cols-1 p-2">
+              <input
+                type="text"
+                id="name"
+                class="border text-sm rounded-lg block w-full p-2.5 bg-gray-300 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="span-cols-1 p-2">
+              <input
+                type="email"
+                id="email"
+                class="border text-sm rounded-lg block w-full p-2.5 bg-gray-300 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="p-2 pt-0">
+            <textarea
+              type="text"
+              id="message"
+              class="border text-sm rounded-lg block w-full p-2.5 bg-gray-300 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="text-white bg-zinc-950 hover:bg-zinc-850 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center max-w-min mt-2 mb-4 mx-4"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./assets/js/contact-form.js"></script>
+  </body>
+</html>
