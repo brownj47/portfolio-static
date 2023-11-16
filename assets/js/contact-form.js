@@ -10,6 +10,7 @@ contactForm.addEventListener("submit", (event) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "X-API-Key": "7WXzn8le3P9L0W4iKmAMI83TS58OfZGFt7QeqEGh",
     },
     body: JSON.stringify({
       name: nameInput.value,
