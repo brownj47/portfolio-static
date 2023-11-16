@@ -19,10 +19,15 @@ contactForm.addEventListener("submit", (event) => {
     }),
   })
     .then((response) => {
-      if (response.status !== 200) {
-        throw new Error();
+      switch (response.status) {
+        case 200:
+          return response.json();
+        case 429:
+          alert("The API has been saturated with requests.");
+          break;
+        default:
+          throw new Error("Something went wrong.");
       }
-      return response.json();
     })
     .then((data) => {
       nameInput.value = "";
